@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Khost: { "Mond Nano Blue": 7, "Milano Queen Furious Red": 1, "Mond Nano White": 1, "Milano Fan Pack New York": 1, "Milano Fan Pack London": 1 },
     "Poli Khomre": { "Mond Nano Blue": 6, "Milano Queen Furious Red": 1, "Mond Nano White": 2, "Milano Fan Pack New York": 1, "Milano Fan Pack London": 1 },
     Parwan: { "Mond Nano Blue": 4, "Milano Queen Furious Red": 1, "Mond Nano White": 1, "Milano Fan Pack New York": 1, "Milano Fan Pack London": 1 },
-    Badakhshan: { "Mond Nano Blue": 6, "Milano Queen Furious Red": 1, "Mond Nano White": 1, "Milano Fan Pack New York": 1, "Milano Fan Pack London": 1 }
+    Badakhshan: { "Mond Nano Blue": 1, "Milano Queen Furious Red": 1, "Mond Nano White": 1, "Milano Fan Pack New York": 1, "Milano Fan Pack London": 1 }
   };
 
   function setQualified(el, value) {
@@ -78,3 +78,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+

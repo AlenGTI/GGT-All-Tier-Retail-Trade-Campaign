@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GTI Trade Campaign Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 id="calculatorTitle">GTI Trade Campaign Tool</h1>
+
+<div class="region-box">
+  <label for="region" class="region-label">Select Region:</label>
+  <select id="region">
+    <option value="" disabled selected>-- Choose Region --</option>
+    <option>Kabul</option>
+    <option>Herat</option>
+    <option>Kandahar</option>
+    <option>Jalalabad</option>
+    <option>Mazar</option>
+    <option>Helmand</option>
+    <option>Ghazni</option>
+    <option>Konduz</option>
+    <option>Jozjan</option>
+    <option>Khost</option>
+    <option>Poli Khomre</option>
+    <option>Parwan</option>
+    <option>Badakhshan</option>
+  </select>
+</div>
+
+<table id="bagTable">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Plastic Bag / Outer</th>
+      <th>Order Placed (Outers)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Milano Fan Pack New York</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+    <tr><td>Milano Fan Pack London</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+    <tr><td>Milano Queen Furious Red</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+    <tr><td>Milano Nano Las Vegas Black</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+    <tr><td>Mond QS Red</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+    <tr><td>Mond Nano Blue</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+    <tr><td>Mond Nano White</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+    <tr><td>Momento Nano Black Jet Wave</td><td class="bag">1</td><td><input class="order" type="number" min="0" value="0"></td></tr>
+  </tbody>
+</table>
+
+<button id="calculate">Calculate Offers</button>
+
+<table class="result-table">
+  <thead>
+    <tr>
+      <th>Bag Campaign</th>
+      <th>Qualified Outers</th>
+      <th>Number of Plastic Bags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Must Have Range Offer</td>
+      <td id="mhrOuters">0</td>
+      <td id="mhrBags">0</td>
+    </tr>
+    <tr>
+      <td>Individual Offer</td>
+      <td id="indOuters">0</td>
+      <td id="indBags">0</td>
+    </tr>
+    <tr>
+      <td><b>Total</b></td>
+      <td id="totalOuters"><b>0</b></td>
+      <td id="totalBags"><b>0</b></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="result-table">
+  <thead>
+    <tr>
+      <th>Raffle Campaign</th>
+      <th>Eligibility Status</th>
+      <th>Number of Tickets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Raffle Ticket</td>
+      <td id="raffleStatus"></td>
+      <td id="raffleTickets">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="customerEligible">
+  Customer Eligible For
+  <span id="maxBags" class="highlight">0</span> Plastic Bags and
+  <span id="maxTickets" class="highlight">0</span> Raffle Ticket
+</div>
+
+<div id="creatorCredit">Created by Alen Nero</div>
+
+<script src="script.js"></script>
+</body>
+</html>

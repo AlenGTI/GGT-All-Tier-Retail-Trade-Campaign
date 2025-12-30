@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalOuters = orders.reduce((a, b) => a + b, 0);
 
     const mhrOuters = minOrder > 0 ? minOrder * rows.length : 0;
-    const mhrBags = minOrder > 0 ? minOrder * 10 : 0;
+    const mhrBags = minOrder > 0 ? minOrder * 15 : 0;
 
     setQualified(document.getElementById("mhrOuters"), mhrOuters);
     document.getElementById("mhrBags").innerText = mhrBags;
@@ -102,4 +102,5 @@ if (indOuters === 0) {
   });
 
 });
+
 

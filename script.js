@@ -73,7 +73,12 @@ document.addEventListener("DOMContentLoaded", function () {
       indBags += excess * bags[i];
     });
 
-    setQualified(document.getElementById("indOuters"), indOuters);
+ const indOutersEl = document.getElementById("indOuters");
+setQualified(indOutersEl, indOuters);
+if (indOuters === 0) {
+  indOutersEl.innerText = "0";
+  indOutersEl.classList.remove("not-eligible-text");
+}
     document.getElementById("indBags").innerText = indBags;
 
     document.getElementById("totalOuters").innerHTML = `<b>${totalOuters}</b>`;
@@ -97,3 +102,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
